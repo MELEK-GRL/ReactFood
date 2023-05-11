@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css');
+
+*{
+    scroll-behavior: smooth;
+}
+
+@layer components{
+    .trasitionMenu{
+        transition: 500ms all;
+        
+    }
+        
+    .anime{
+        @apply  transition duration-200 ease-out  hover:ease-in
+    }
+    .backgroundThme{
+       @apply bg-gradient-to-r from-gray-200 to-gray-100
+    }
+    .backgroundWhite{
+        @apply bg-gradient-to-r from-white to-white
+    }
+    .colors{
+        @apply text-gray-600
+    }
+}
+@layer components{
+    .anime{
+        @apply transition duration-150 ease-out  hover:ease-in
+    }
+    
+
+    .headerBox{
+        box-shadow: 0 8px 17px 0 rgba(0,0,0,.2);
+    }
+    .headerChange{
+        @apply headerBox
+    }
+    .hoverBar{
+        @apply  cursor-pointer font-semibold text-[16px] hover:text-rose-900 hover:transform transition-all hover:font-semibold
+    }
+    .boxCenter{
+        @apply  items-center justify-center flex
+    }
+    .boxStart{
+        @apply  items-start justify-start flex
+    }
+    .noneBox{
+        @apply  md:visible invisible
+
+    }
+    .menuBox{
+        @apply  z-20  invisible  w-0   absolute  max-h-full h-full
+    }
+    .menuBoxNone{
+        @apply  visible  w-full trasitionMenu
+    }
+    
+   
+    
+    .colorText{
+        @apply text-rose-900
+    }
+    
+    
+    .btn{
+        @apply transition duration-150 p-1 ease-out hover:ease-in rounded-md hover:border-red-600 border hover:font-semibold font-semibold  bg-red-600 text-white  hover:text-red-600 hover:bg-white cursor-pointer
+    }
+    .btnGreen{
+        @apply transition duration-150 p-1 ease-out hover:ease-in rounded-md hover:border-green-600 border hover:font-semibold font-semibold  bg-green-600 text-white  hover:text-green-600 hover:bg-white cursor-pointer
+    }
+    
+
+    .socialMedia{
+        @apply border translate-y-0 hover:-translate-y-2 rounded p-[1px] transition duration-150 ease-out hover:ease-in  cursor-pointer bg-rose-900 text-white font-semibold  hover:text-rose-900 hover:bg-white hover:font-semibold
+    }
+    .containerBox{
+        @apply  px-3 lg:px-14  
+    }
+    .categoriesBox{
+        @apply  anime  p-2 gap-2 cursor-pointer hover:-translate-y-2 -translate-y-0 border border-rose-800 bg-rose-800 rounded boxCenter
+    }
+    .colorGray{
+        @apply text-gray-600 text-[13px] 
+    }
+    .colorPage{
+        @apply  font-bold font-mono text-[28px] text-rose-900
+    }
+   
+  
+   
+    .paginationBttns a{
+       @apply px-3 py-1 transition duration-150 ease-out hover:ease-in rounded-md hover:border-rose-900 border hover:font-semibold font-semibold  bg-rose-900 text-white  hover:text-rose-900 hover:bg-white cursor-pointer
+    }
+   .calc{
+    width: calc(100% - 108px);;
+   }
+   .dropdowns{
+    @apply absolute right-0 backgroundThme  h-[240px] z-10 mt-2 w-[43rem] origin-top-right  bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none
+   }
+   .dropdownMenus{
+    @apply inline-flex w-full  border-gray-300  items-center  justify-center gap-x-1.5  bg-white px-2 py-2 text-sm font-semibold text-gray-900   hover:shadow-sm ring-inset ring-gray-300 hover:bg-gray-50
+   }
+   .dropdownIns{
+    @apply left-[0.5rem]
+   }
+   .dropdownInd{
+    @apply -left-[7.8rem]
+   }
+   .dropdownActiv{
+    @apply left-[-15.2rem]
+   }
+   .dropdownRes{
+    @apply -left-[30.8rem]
+   }
+
+    .active{
+        @apply visible trasitionMenu  p-2 w-full anime 
+    }
+    .inactive{
+        @apply invisible w-0 h-0
+    }
+    .linkMenu{
+        @apply hover:font-semibold font-semibold px-3 w-full py-1 bg-gray-300 rounded-md flex items-center justify-center text-gray-600 hover:border-gray-600 hover:border border-gray-200 hover:bg-white hover:text-gray-600 border anime
+    }
+    .hoverMenuCross{
+        @apply   rounded-md  items-center justify-center text-gray-600 hover:border-gray-600 hover:border border-gray-200 hover:bg-white hover:text-gray-600 border anime
+    }
+    .slick-slide.div{
+        border: none !important;
+        box-sizing: none !important;
+        border-width: none !important;
+        border-color: none !important;
+    }
+    .boxActive{
+        @apply w-full flex absolute top-0 text-sm left-0 border-b-2 border-white
+       }
+       .tabItem{
+        @apply visible
+       }
+        
+       .changeText{
+        @apply flex w-full items-center justify-center shadow-lg p-2 text-white rounded bg-sky-800
+       }
+       .borderTex{
+        @apply whitespace-nowrap text-lg font-semibold
+       }
+       .boxActiveBorder{
+        @apply border-b-2 border-red-500 py-1 borderTex
+       }
+       .boxBorderNone{
+        @apply border-b-2 border-white borderTex
+       }
+       .tabItemNone{
+        @apply invisible w-0 h-0
+       }
+
+   .tops{
+    top: 0px;
+   }
+    
+}
+.slick-dots{
+    margin-bottom: 2.5em !important
+    }
+    
+
+    .scrollBar::-webkit-scrollbar{
+        width: 5px;
+        height: 3px;
+    
+      }
+      .scrollBar::-webkit-scrollbar-thumb {
+        background-color:rgb(104, 102, 102);
+        border-radius: 10px;
+      }
+      .scrollBar::-webkit-scrollbar-track {
+        border-radius: 10px;
+         height: 3px;
+         
+         
+      }
+    
+   
