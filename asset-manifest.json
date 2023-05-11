@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ReactFood/static/css/main.0957f1f2.css",
+    "main.js": "/ReactFood/static/js/main.5ecc5ce1.js",
+    "static/media/slide3.jpg": "/ReactFood/static/media/slide3.8e5bdadfad6be953dd65.jpg",
+    "static/media/slide2.jpg": "/ReactFood/static/media/slide2.0ccef3cbde4448c4802b.jpg",
+    "static/media/slide1.png": "/ReactFood/static/media/slide1.8ebd3c0b9ee4909f63ae.png",
+    "static/media/slide4.jpg": "/ReactFood/static/media/slide4.b54f9b982c26bf25cdd6.jpg",
+    "static/media/img-1.jpg": "/ReactFood/static/media/img-1.91e04adf71b565559149.jpg",
+    "static/media/img-2.jpg": "/ReactFood/static/media/img-2.e133eeff8c51603d021d.jpg",
+    "static/media/mealboxlogo.png": "/ReactFood/static/media/mealboxlogo.d7796aba62656d196a1a.png",
+    "static/media/slick.svg": "/ReactFood/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ReactFood/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ReactFood/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ReactFood/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ReactFood/index.html",
+    "main.0957f1f2.css.map": "/ReactFood/static/css/main.0957f1f2.css.map",
+    "main.5ecc5ce1.js.map": "/ReactFood/static/js/main.5ecc5ce1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0957f1f2.css",
+    "static/js/main.5ecc5ce1.js"
+  ]
+}
